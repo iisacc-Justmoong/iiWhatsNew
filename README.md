@@ -46,3 +46,13 @@ target_link_libraries(my_app PRIVATE iiWhatsNew::iiWhatsNew)
 소비 프로젝트의 `CMAKE_PREFIX_PATH`에 설치 prefix와 Qt prefix를 지정한다.
 공개 CMake 타깃이 C++20 요구 사항과 Qt6::Core 링크 의존성을 전파한다.
 설치된 라이브러리를 실행하려면 Qt 6.8.3 런타임이 필요하다.
+
+## License
+
+SPDX-License-Identifier: AGPL-3.0-only
+
+iiWhatsNew의 자체 작성 코드와 문서는 GNU Affero General Public License v3.0 전용으로
+배포한다. 전체 조건은 [LICENSE](LICENSE)를 따른다.
+
+Qt를 포함한 외부 라이브러리와 별도 고지가 있는 서드파티 코드는 각자의 라이선스를
+유지한다. 이 프로젝트의 라이선스 선언은 해당 서드파티 라이선스를 대체하지 않는다.
