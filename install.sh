@@ -5,8 +5,8 @@ SDK_SOURCE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SDK_BUILD_DIR="${SDK_SOURCE_DIR}/build"
 SDK_INSTALL_PREFIX="${INSTALL_PREFIX:-${HOME}/.local/SDK/iiWhatsNew}"
 SDK_QT_PREFIX="${QT_PREFIX_PATH:-}"
-if [[ -z "${SDK_QT_PREFIX}" && -f "${HOME}/Qt/6.8.3/macos/lib/cmake/Qt6/Qt6Config.cmake" ]]; then
-    SDK_QT_PREFIX="${HOME}/Qt/6.8.3/macos"
+if [[ -z "${SDK_QT_PREFIX}" && -f "/Volumes/Storage/Qt/6.8.3/macos/lib/cmake/Qt6/Qt6Config.cmake" ]]; then
+    SDK_QT_PREFIX="/Volumes/Storage/Qt/6.8.3/macos"
 fi
 SDK_PREFIX_PATH="${SDK_QT_PREFIX}"
 if [[ -n "${CMAKE_PREFIX_PATH:-}" ]]; then

@@ -24,7 +24,7 @@ Qt의 이용·배포 조건은 사용하는 Qt 배포본의 라이선스를 따�
 `$HOME/.local/SDK/iiWhatsNew`에 설치한다. 이후 `build/consumer/build/`에서
 독립 소비자를 빌드하고 설치된 패키지의 검색·링크·실행을 검증한다.
 검증은 정확한 반환 문자열, C++20 및 Qt 헤더 버전, 실행 중 Qt 버전을 확인한다.
-기본 Qt 경로는 존재할 경우 `$HOME/Qt/6.8.3/macos`를 사용한다.
+기본 Qt 경로는 존재할 경우 `/Volumes/Storage/Qt/6.8.3/macos`를 사용한다.
 다른 환경에서는 다음 변수를 지정한다.
 
 ```sh
