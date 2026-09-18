@@ -16,13 +16,13 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 include(CTest)
 
-add_library(iiWhatsNew SHARED iiWhatsNew.cpp iiWhatsNew.h)
+add_library(iiWhatsNew SHARED src/iiWhatsNew.cpp src/iiWhatsNew.h)
 add_library(iiWhatsNew::iiWhatsNew ALIAS iiWhatsNew)
 target_compile_features(iiWhatsNew PUBLIC cxx_std_20)
 target_compile_definitions(iiWhatsNew PRIVATE IIWHATSNEW_BUILDING_LIBRARY)
 target_link_libraries(iiWhatsNew PUBLIC Qt6::Core)
 target_include_directories(iiWhatsNew PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 set_target_properties(iiWhatsNew PROPERTIES
@@ -48,7 +48,7 @@ install(TARGETS iiWhatsNew EXPORT iiWhatsNewTargets
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
-install(FILES iiWhatsNew.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+install(FILES src/iiWhatsNew.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 install(FILES README.md DESTINATION ${CMAKE_INSTALL_DATADIR}/iiWhatsNew)
 install(EXPORT iiWhatsNewTargets
     FILE iiWhatsNewTargets.cmake NAMESPACE iiWhatsNew::
