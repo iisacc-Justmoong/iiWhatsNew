@@ -1,6 +1,11 @@
 # iiWhatsNew
 
-A version 0.1.0 dynamic placeholder library using C++20 and Qt 6.8.3 Core. Public function `iiWhatsNew::helloWorld()` returns `QString` value `Hello world!`. Product features such as new news inquiry and display have not yet been implemented.
+Package release: **0.1.1** (2026-10-19). This patch packages the current
+source snapshot; build, test and installation evidence is recorded in the SDK
+patch-release report. Earlier versioned feature notes remain historical.
+
+
+A version 0.1.1 dynamic placeholder library using C++20 and Qt 6.8.3 Core. Public function `iiWhatsNew::helloWorld()` returns `QString` value `Hello world!`. Product features such as new news inquiry and display have not yet been implemented.
 
 ```cpp
 #include <iiWhatsNew.h>
@@ -31,7 +36,7 @@ The `CMAKE_PREFIX_PATH` environment variable also supports additional CMake sear
 ## Consumer project
 
 ```cmake
-find_package(iiWhatsNew 0.1.0 CONFIG REQUIRED)
+find_package(iiWhatsNew 0.1.1 CONFIG REQUIRED)
 target_link_libraries(my_app PRIVATE iiWhatsNew::iiWhatsNew)
 ```
 
