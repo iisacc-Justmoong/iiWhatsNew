@@ -18,7 +18,7 @@ include(CTest)
 
 add_library(iiWhatsNew SHARED src/iiWhatsNew.cpp src/iiWhatsNew.h)
 add_library(iiWhatsNew::iiWhatsNew ALIAS iiWhatsNew)
-target_compile_features(iiWhatsNew PUBLIC cxx_std_20)
+target_compile_features(iiWhatsNew PUBLIC cxx_std_23)
 target_compile_definitions(iiWhatsNew PRIVATE IIWHATSNEW_BUILDING_LIBRARY)
 target_link_libraries(iiWhatsNew PUBLIC Qt6::Core)
 target_include_directories(iiWhatsNew PUBLIC
@@ -26,7 +26,7 @@ target_include_directories(iiWhatsNew PUBLIC
     $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
 set_target_properties(iiWhatsNew PROPERTIES
-    CXX_STANDARD 20
+    CXX_STANDARD 23
     CXX_STANDARD_REQUIRED ON
     CXX_EXTENSIONS OFF
     CXX_VISIBILITY_PRESET hidden
