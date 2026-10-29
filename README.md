@@ -1,6 +1,6 @@
 # iiWhatsNew
 
-[Windows 빌드 및 실행](docs/WindowsBuildAndRun.md)
+[Windows build and execution](docs/WindowsBuildAndRun.md)
 
 Package release: **0.1.1** (2026-10-19). This patch packages the current
 source snapshot; build, test and installation evidence is recorded in the SDK
@@ -55,3 +55,12 @@ External libraries including Qt and third-party code with separate notices maint
 ## Source layout
 
 Implementation files and their headers live together under `src/`. Existing feature and platform subdirectories retain their responsibilities. Build configuration, tests, documentation, resources, and maintenance scripts remain at the project root. Configure and build using the repository-local `build/` directory.
+
+<!-- workspace-docs:readme:start -->
+## Documentation entry points
+
+- Human overview: this English `README.md`.
+- Agent instructions: [AGENT.md](AGENT.md).
+- Human documentation: [documentation index](docs/README.md).
+- Structured agent documentation: [agent index](docs/agent-index.json).
+<!-- workspace-docs:readme:end -->

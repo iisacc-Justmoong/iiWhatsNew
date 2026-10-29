@@ -1,0 +1,79 @@
+{
+  "format": "iisacc.agent-document",
+  "schema_version": 1,
+  "document_id": "urn:iisacc:document:d51450e9d124413a64d8f76a9402c158b50385d3fba965c9e5bff53e1034c14d",
+  "project": {
+    "id": "urn:iisacc:project:SDK%2FiiWhatsNew",
+    "name": "iiWhatsNew",
+    "root": "SDK/iiWhatsNew",
+    "kind": "sdk"
+  },
+  "source": {
+    "path": "docs/WindowsBuild.md",
+    "sha256": "d2fb945c57fee68ff3f62afa1b455585d5aa588af8723c13c89e1219d34a51c0",
+    "bytes": 345,
+    "line_count": 5,
+    "encoding": "utf-8",
+    "language": "ko"
+  },
+  "document": {
+    "title": "Windows C++23 구성",
+    "role": "guide",
+    "authority": "markdown_source"
+  },
+  "blocks": [
+    {
+      "id": "b000001",
+      "kind": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "raw": "# Windows C++23 구성\n",
+      "level": 1,
+      "title": "Windows C++23 구성"
+    },
+    {
+      "id": "b000002",
+      "kind": "blank",
+      "start_line": 2,
+      "end_line": 2,
+      "raw": "\n"
+    },
+    {
+      "id": "b000003",
+      "kind": "paragraph",
+      "start_line": 3,
+      "end_line": 5,
+      "raw": "라이브러리와 소비자에게 내보내는 언어 요구를 iiSDK 공통 기준인 C++23으로 맞춘다.\n기존 hello-world 실행 검사와 별도 설치 소비자를 실제 MSVC Release로 빌드·실행한다.\n새 Qt 의존성이나 공개 API를 추가하지 않는다. 빌드 출력은 build/에 유지한다.\n"
+    }
+  ],
+  "outline": [
+    {
+      "block_id": "b000001",
+      "parent_id": null,
+      "level": 1,
+      "title": "Windows C++23 구성",
+      "anchor": "windows-c23-구성",
+      "start_line": 1
+    }
+  ],
+  "indexes": {
+    "directive_candidates": [
+      {
+        "block_id": "b000003",
+        "line": 5,
+        "text": "새 Qt 의존성이나 공개 API를 추가하지 않는다. 빌드 출력은 build/에 유지한다.",
+        "basis": "lexical_match",
+        "context": "paragraph"
+      }
+    ],
+    "commands": [],
+    "links": [],
+    "tables": []
+  },
+  "provenance": {
+    "generator": "workspace-docs",
+    "version": "1.0.0",
+    "profile": "lossless-blocks-v1",
+    "derived": true
+  }
+}

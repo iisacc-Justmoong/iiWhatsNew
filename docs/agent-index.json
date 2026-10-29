@@ -1,0 +1,69 @@
+{
+  "format": "iisacc.agent-document-index",
+  "schema_version": 1,
+  "project": {
+    "id": "urn:iisacc:project:SDK%2FiiWhatsNew",
+    "name": "iiWhatsNew",
+    "root": "SDK/iiWhatsNew",
+    "kind": "sdk"
+  },
+  "documentation_root": "docs",
+  "agent_schema": "docs/agent-document.schema.json",
+  "documents": [
+    {
+      "document_id": "urn:iisacc:document:1e0357691a1a9e7b39a81ca8db039edaee57c91d1ba6f4446d102e4fddd3f565",
+      "source": "AGENT.md",
+      "agent_json": "docs/entrypoints/AGENT.agent.json",
+      "source_sha256": "b3e88b1f17838adb3564163a5b520695f03cc782e6bbf4e7000ac6cd5094e1a9",
+      "role": "instructions"
+    },
+    {
+      "document_id": "urn:iisacc:document:dcab5729e1c0405dd7863612d505bd502d64117056888969f00231db70e3cfe4",
+      "source": "README.md",
+      "agent_json": "docs/entrypoints/README.agent.json",
+      "source_sha256": "c837ebe379cc6a51a479e0b07c637e272e84bc7815cc0a0f2be6c5df2b7bd678",
+      "role": "overview"
+    },
+    {
+      "document_id": "urn:iisacc:document:f1b0843d1507b43cf55a64a86f4cf748000af10c0506324320dbfcad2c69a9c6",
+      "source": "docs/README.md",
+      "agent_json": "docs/README.agent.json",
+      "source_sha256": "1f91ec14dc55449f788ef706a1c9ee409de9d999e6e188328c29376bd923916f",
+      "role": "overview"
+    },
+    {
+      "document_id": "urn:iisacc:document:d51450e9d124413a64d8f76a9402c158b50385d3fba965c9e5bff53e1034c14d",
+      "source": "docs/WindowsBuild.md",
+      "agent_json": "docs/WindowsBuild.agent.json",
+      "source_sha256": "d2fb945c57fee68ff3f62afa1b455585d5aa588af8723c13c89e1219d34a51c0",
+      "role": "guide"
+    },
+    {
+      "document_id": "urn:iisacc:document:14976518d66d431dde65446b3ecbaeb8dc913205ea96a2c03fd38f20b6de8c73",
+      "source": "docs/WindowsBuildAndRun.md",
+      "agent_json": "docs/WindowsBuildAndRun.agent.json",
+      "source_sha256": "b6a074591886ef6306b2a90a4746854962a997736d11de982a0543b324bbf32d",
+      "role": "guide"
+    },
+    {
+      "document_id": "urn:iisacc:document:ca376469e9e1a9762082d93963efe8e3af59087e063aa3f7c2ae01cfe434972e",
+      "source": "docs/documentation-structure.md",
+      "agent_json": "docs/documentation-structure.agent.json",
+      "source_sha256": "343950cb53dc9c6029154dc1e6e294c2b769bbed914ab5bd8e1ab6a37de4dd83",
+      "role": "guide"
+    }
+  ],
+  "layout": {
+    "human_entry": "README.md",
+    "agent_entry": "AGENT.md",
+    "human_format": "markdown",
+    "agent_format": "structured_json",
+    "source_authority": "markdown"
+  },
+  "provenance": {
+    "generator": "workspace-docs",
+    "version": "1.0.0",
+    "profile": "lossless-blocks-v1",
+    "derived": true
+  }
+}

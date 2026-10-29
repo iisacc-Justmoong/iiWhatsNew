@@ -1,0 +1,532 @@
+{
+  "format": "iisacc.agent-document",
+  "schema_version": 1,
+  "document_id": "urn:iisacc:document:dcab5729e1c0405dd7863612d505bd502d64117056888969f00231db70e3cfe4",
+  "project": {
+    "id": "urn:iisacc:project:SDK%2FiiWhatsNew",
+    "name": "iiWhatsNew",
+    "root": "SDK/iiWhatsNew",
+    "kind": "sdk"
+  },
+  "source": {
+    "path": "README.md",
+    "sha256": "c837ebe379cc6a51a479e0b07c637e272e84bc7815cc0a0f2be6c5df2b7bd678",
+    "bytes": 3307,
+    "line_count": 66,
+    "encoding": "utf-8",
+    "language": "ko"
+  },
+  "document": {
+    "title": "iiWhatsNew",
+    "role": "overview",
+    "authority": "markdown_source"
+  },
+  "blocks": [
+    {
+      "id": "b000001",
+      "kind": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "raw": "# iiWhatsNew\n",
+      "level": 1,
+      "title": "iiWhatsNew"
+    },
+    {
+      "id": "b000002",
+      "kind": "blank",
+      "start_line": 2,
+      "end_line": 2,
+      "raw": "\n"
+    },
+    {
+      "id": "b000003",
+      "kind": "paragraph",
+      "start_line": 3,
+      "end_line": 3,
+      "raw": "[Windows build and execution](docs/WindowsBuildAndRun.md)\n"
+    },
+    {
+      "id": "b000004",
+      "kind": "blank",
+      "start_line": 4,
+      "end_line": 4,
+      "raw": "\n"
+    },
+    {
+      "id": "b000005",
+      "kind": "paragraph",
+      "start_line": 5,
+      "end_line": 7,
+      "raw": "Package release: **0.1.1** (2026-10-19). This patch packages the current\nsource snapshot; build, test and installation evidence is recorded in the SDK\npatch-release report. Earlier versioned feature notes remain historical.\n"
+    },
+    {
+      "id": "b000006",
+      "kind": "blank",
+      "start_line": 8,
+      "end_line": 9,
+      "raw": "\n\n"
+    },
+    {
+      "id": "b000007",
+      "kind": "paragraph",
+      "start_line": 10,
+      "end_line": 10,
+      "raw": "A version 0.1.1 dynamic placeholder library using C++20 and Qt 6.8.3 Core. Public function `iiWhatsNew::helloWorld()` returns `QString` value `Hello world!`. Product features such as new news inquiry and display have not yet been implemented.\n"
+    },
+    {
+      "id": "b000008",
+      "kind": "blank",
+      "start_line": 11,
+      "end_line": 11,
+      "raw": "\n"
+    },
+    {
+      "id": "b000009",
+      "kind": "fenced_code",
+      "start_line": 12,
+      "end_line": 16,
+      "raw": "```cpp\n#include <iiWhatsNew.h>\n\nconst QString message = iiWhatsNew::helloWorld();\n```\n",
+      "language": "cpp",
+      "code": "#include <iiWhatsNew.h>\n\nconst QString message = iiWhatsNew::helloWorld();\n",
+      "closed": true
+    },
+    {
+      "id": "b000010",
+      "kind": "blank",
+      "start_line": 17,
+      "end_line": 17,
+      "raw": "\n"
+    },
+    {
+      "id": "b000011",
+      "kind": "html",
+      "start_line": 18,
+      "end_line": 18,
+      "raw": "<a id=\"빌드테스트설치\"></a>\n"
+    },
+    {
+      "id": "b000012",
+      "kind": "blank",
+      "start_line": 19,
+      "end_line": 19,
+      "raw": "\n"
+    },
+    {
+      "id": "b000013",
+      "kind": "heading",
+      "start_line": 20,
+      "end_line": 20,
+      "raw": "## Build·Test·Install\n",
+      "level": 2,
+      "title": "Build·Test·Install"
+    },
+    {
+      "id": "b000014",
+      "kind": "blank",
+      "start_line": 21,
+      "end_line": 21,
+      "raw": "\n"
+    },
+    {
+      "id": "b000015",
+      "kind": "paragraph",
+      "start_line": 22,
+      "end_line": 22,
+      "raw": "CMake 3.24 and above, C++20 compiler, and Qt 6.8.3 Core development package are required. External dependencies consist of one existing Qt Core, and no additional libraries are downloaded. Qt's usage and distribution conditions follow the license of the used Qt distribution.\n"
+    },
+    {
+      "id": "b000016",
+      "kind": "blank",
+      "start_line": 23,
+      "end_line": 23,
+      "raw": "\n"
+    },
+    {
+      "id": "b000017",
+      "kind": "fenced_code",
+      "start_line": 24,
+      "end_line": 26,
+      "raw": "```sh\n./install.sh\n```\n",
+      "language": "sh",
+      "code": "./install.sh\n",
+      "closed": true
+    },
+    {
+      "id": "b000018",
+      "kind": "blank",
+      "start_line": 27,
+      "end_line": 27,
+      "raw": "\n"
+    },
+    {
+      "id": "b000019",
+      "kind": "paragraph",
+      "start_line": 28,
+      "end_line": 28,
+      "raw": "The script runs Release build and CTest from `build/` and then installs to `$HOME/.local/SDK/iiWhatsNew`. Subsequently, it builds and installs an independent consumer from `build/consumer/build/` and verifies search, link, and execution of the installed package. Verification checks for exact return strings, C++20 and Qt header versions, and Qt version during execution. The default Qt path is used if `/Volumes/Storage/Qt/6.8.3/macos` exists. In other environments, the following variables are specified.\n"
+    },
+    {
+      "id": "b000020",
+      "kind": "blank",
+      "start_line": 29,
+      "end_line": 29,
+      "raw": "\n"
+    },
+    {
+      "id": "b000021",
+      "kind": "fenced_code",
+      "start_line": 30,
+      "end_line": 32,
+      "raw": "```sh\nQT_PREFIX_PATH=/path/to/Qt/6.8.3 INSTALL_PREFIX=/path/to/iiWhatsNew ./install.sh\n```\n",
+      "language": "sh",
+      "code": "QT_PREFIX_PATH=/path/to/Qt/6.8.3 INSTALL_PREFIX=/path/to/iiWhatsNew ./install.sh\n",
+      "closed": true
+    },
+    {
+      "id": "b000022",
+      "kind": "blank",
+      "start_line": 33,
+      "end_line": 33,
+      "raw": "\n"
+    },
+    {
+      "id": "b000023",
+      "kind": "paragraph",
+      "start_line": 34,
+      "end_line": 34,
+      "raw": "The `CMAKE_PREFIX_PATH` environment variable also supports additional CMake search paths separated by semicolons. Installation results are `lib/` dynamic library, `include/iiWhatsNew.h`, `lib/cmake/iiWhatsNew/` package settings, and `share/iiWhatsNew/README.md`.\n"
+    },
+    {
+      "id": "b000024",
+      "kind": "blank",
+      "start_line": 35,
+      "end_line": 35,
+      "raw": "\n"
+    },
+    {
+      "id": "b000025",
+      "kind": "html",
+      "start_line": 36,
+      "end_line": 36,
+      "raw": "<a id=\"소비-프로젝트\"></a>\n"
+    },
+    {
+      "id": "b000026",
+      "kind": "blank",
+      "start_line": 37,
+      "end_line": 37,
+      "raw": "\n"
+    },
+    {
+      "id": "b000027",
+      "kind": "heading",
+      "start_line": 38,
+      "end_line": 38,
+      "raw": "## Consumer project\n",
+      "level": 2,
+      "title": "Consumer project"
+    },
+    {
+      "id": "b000028",
+      "kind": "blank",
+      "start_line": 39,
+      "end_line": 39,
+      "raw": "\n"
+    },
+    {
+      "id": "b000029",
+      "kind": "fenced_code",
+      "start_line": 40,
+      "end_line": 43,
+      "raw": "```cmake\nfind_package(iiWhatsNew 0.1.1 CONFIG REQUIRED)\ntarget_link_libraries(my_app PRIVATE iiWhatsNew::iiWhatsNew)\n```\n",
+      "language": "cmake",
+      "code": "find_package(iiWhatsNew 0.1.1 CONFIG REQUIRED)\ntarget_link_libraries(my_app PRIVATE iiWhatsNew::iiWhatsNew)\n",
+      "closed": true
+    },
+    {
+      "id": "b000030",
+      "kind": "blank",
+      "start_line": 44,
+      "end_line": 44,
+      "raw": "\n"
+    },
+    {
+      "id": "b000031",
+      "kind": "paragraph",
+      "start_line": 45,
+      "end_line": 45,
+      "raw": "Specify the installation prefix and the Qt prefix in the consumer project's `CMAKE_PREFIX_PATH`. The public CMake target propagates the C++20 requirements and Qt6::Core link dependency. Running the installed library requires the Qt 6.8.3 runtime.\n"
+    },
+    {
+      "id": "b000032",
+      "kind": "blank",
+      "start_line": 46,
+      "end_line": 46,
+      "raw": "\n"
+    },
+    {
+      "id": "b000033",
+      "kind": "heading",
+      "start_line": 47,
+      "end_line": 47,
+      "raw": "## License\n",
+      "level": 2,
+      "title": "License"
+    },
+    {
+      "id": "b000034",
+      "kind": "blank",
+      "start_line": 48,
+      "end_line": 48,
+      "raw": "\n"
+    },
+    {
+      "id": "b000035",
+      "kind": "paragraph",
+      "start_line": 49,
+      "end_line": 49,
+      "raw": "SPDX-License-Identifier: MIT\n"
+    },
+    {
+      "id": "b000036",
+      "kind": "blank",
+      "start_line": 50,
+      "end_line": 50,
+      "raw": "\n"
+    },
+    {
+      "id": "b000037",
+      "kind": "paragraph",
+      "start_line": 51,
+      "end_line": 51,
+      "raw": "Self-written code and documents of iiWhatsNew are distributed under the MIT License. The full terms follow [LICENSE](LICENSE).\n"
+    },
+    {
+      "id": "b000038",
+      "kind": "blank",
+      "start_line": 52,
+      "end_line": 52,
+      "raw": "\n"
+    },
+    {
+      "id": "b000039",
+      "kind": "paragraph",
+      "start_line": 53,
+      "end_line": 53,
+      "raw": "External libraries including Qt and third-party code with separate notices maintain their own licenses. This project's license declaration does not replace the corresponding third-party license.\n"
+    },
+    {
+      "id": "b000040",
+      "kind": "blank",
+      "start_line": 54,
+      "end_line": 54,
+      "raw": "\n"
+    },
+    {
+      "id": "b000041",
+      "kind": "heading",
+      "start_line": 55,
+      "end_line": 55,
+      "raw": "## Source layout\n",
+      "level": 2,
+      "title": "Source layout"
+    },
+    {
+      "id": "b000042",
+      "kind": "blank",
+      "start_line": 56,
+      "end_line": 56,
+      "raw": "\n"
+    },
+    {
+      "id": "b000043",
+      "kind": "paragraph",
+      "start_line": 57,
+      "end_line": 57,
+      "raw": "Implementation files and their headers live together under `src/`. Existing feature and platform subdirectories retain their responsibilities. Build configuration, tests, documentation, resources, and maintenance scripts remain at the project root. Configure and build using the repository-local `build/` directory.\n"
+    },
+    {
+      "id": "b000044",
+      "kind": "blank",
+      "start_line": 58,
+      "end_line": 58,
+      "raw": "\n"
+    },
+    {
+      "id": "b000045",
+      "kind": "html",
+      "start_line": 59,
+      "end_line": 59,
+      "raw": "<!-- workspace-docs:readme:start -->\n"
+    },
+    {
+      "id": "b000046",
+      "kind": "heading",
+      "start_line": 60,
+      "end_line": 60,
+      "raw": "## Documentation entry points\n",
+      "level": 2,
+      "title": "Documentation entry points"
+    },
+    {
+      "id": "b000047",
+      "kind": "blank",
+      "start_line": 61,
+      "end_line": 61,
+      "raw": "\n"
+    },
+    {
+      "id": "b000048",
+      "kind": "list",
+      "start_line": 62,
+      "end_line": 65,
+      "raw": "- Human overview: this English `README.md`.\n- Agent instructions: [AGENT.md](AGENT.md).\n- Human documentation: [documentation index](docs/README.md).\n- Structured agent documentation: [agent index](docs/agent-index.json).\n",
+      "items": [
+        {
+          "marker": "-",
+          "text": "Human overview: this English `README.md`.",
+          "checked": null
+        },
+        {
+          "marker": "-",
+          "text": "Agent instructions: [AGENT.md](AGENT.md).",
+          "checked": null
+        },
+        {
+          "marker": "-",
+          "text": "Human documentation: [documentation index](docs/README.md).",
+          "checked": null
+        },
+        {
+          "marker": "-",
+          "text": "Structured agent documentation: [agent index](docs/agent-index.json).",
+          "checked": null
+        }
+      ]
+    },
+    {
+      "id": "b000049",
+      "kind": "html",
+      "start_line": 66,
+      "end_line": 66,
+      "raw": "<!-- workspace-docs:readme:end -->\n"
+    }
+  ],
+  "outline": [
+    {
+      "block_id": "b000001",
+      "parent_id": null,
+      "level": 1,
+      "title": "iiWhatsNew",
+      "anchor": "iiwhatsnew",
+      "start_line": 1
+    },
+    {
+      "block_id": "b000013",
+      "parent_id": "b000001",
+      "level": 2,
+      "title": "Build·Test·Install",
+      "anchor": "buildtestinstall",
+      "start_line": 20
+    },
+    {
+      "block_id": "b000027",
+      "parent_id": "b000001",
+      "level": 2,
+      "title": "Consumer project",
+      "anchor": "consumer-project",
+      "start_line": 38
+    },
+    {
+      "block_id": "b000033",
+      "parent_id": "b000001",
+      "level": 2,
+      "title": "License",
+      "anchor": "license",
+      "start_line": 47
+    },
+    {
+      "block_id": "b000041",
+      "parent_id": "b000001",
+      "level": 2,
+      "title": "Source layout",
+      "anchor": "source-layout",
+      "start_line": 55
+    },
+    {
+      "block_id": "b000046",
+      "parent_id": "b000001",
+      "level": 2,
+      "title": "Documentation entry points",
+      "anchor": "documentation-entry-points",
+      "start_line": 60
+    }
+  ],
+  "indexes": {
+    "directive_candidates": [
+      {
+        "block_id": "b000015",
+        "line": 22,
+        "text": "CMake 3.24 and above, C++20 compiler, and Qt 6.8.3 Core development package are required. External dependencies consist of one existing Qt Core, and no additional libraries are downloaded. Qt's usage and distribution conditions follow the license of the used Qt distribution.",
+        "basis": "lexical_match",
+        "context": "paragraph"
+      }
+    ],
+    "commands": [
+      {
+        "block_id": "b000017",
+        "language": "sh",
+        "code": "./install.sh\n"
+      },
+      {
+        "block_id": "b000021",
+        "language": "sh",
+        "code": "QT_PREFIX_PATH=/path/to/Qt/6.8.3 INSTALL_PREFIX=/path/to/iiWhatsNew ./install.sh\n"
+      }
+    ],
+    "links": [
+      {
+        "block_id": "b000003",
+        "label": "Windows build and execution",
+        "target": "docs/WindowsBuildAndRun.md",
+        "kind": "relative",
+        "line": 3
+      },
+      {
+        "block_id": "b000037",
+        "label": "LICENSE",
+        "target": "LICENSE",
+        "kind": "relative",
+        "line": 51
+      },
+      {
+        "block_id": "b000048",
+        "label": "AGENT.md",
+        "target": "AGENT.md",
+        "kind": "relative",
+        "line": 63
+      },
+      {
+        "block_id": "b000048",
+        "label": "documentation index",
+        "target": "docs/README.md",
+        "kind": "relative",
+        "line": 64
+      },
+      {
+        "block_id": "b000048",
+        "label": "agent index",
+        "target": "docs/agent-index.json",
+        "kind": "relative",
+        "line": 65
+      }
+    ],
+    "tables": []
+  },
+  "provenance": {
+    "generator": "workspace-docs",
+    "version": "1.0.0",
+    "profile": "lossless-blocks-v1",
+    "derived": true
+  }
+}
