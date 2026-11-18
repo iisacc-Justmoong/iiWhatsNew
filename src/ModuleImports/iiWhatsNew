@@ -1,0 +1,4 @@
+#pragma once
+
+// C++ public entry for iiWhatsNew; the linked components select the API.
+#include <iiWhatsNew.h>
