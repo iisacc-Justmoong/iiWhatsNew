@@ -10,8 +10,8 @@
   },
   "source": {
     "path": "README.md",
-    "sha256": "c837ebe379cc6a51a479e0b07c637e272e84bc7815cc0a0f2be6c5df2b7bd678",
-    "bytes": 3307,
+    "sha256": "c71374944627157029be23d54c940bd8d9690cd0a38b76786f3580500e511a5e",
+    "bytes": 3321,
     "line_count": 66,
     "encoding": "utf-8",
     "language": "ko"
@@ -285,7 +285,7 @@
       "kind": "paragraph",
       "start_line": 49,
       "end_line": 49,
-      "raw": "SPDX-License-Identifier: MIT\n"
+      "raw": "SPDX-License-Identifier: Apache-2.0\n"
     },
     {
       "id": "b000036",
@@ -299,7 +299,7 @@
       "kind": "paragraph",
       "start_line": 51,
       "end_line": 51,
-      "raw": "Self-written code and documents of iiWhatsNew are distributed under the MIT License. The full terms follow [LICENSE](LICENSE).\n"
+      "raw": "Self-written code and documents of iiWhatsNew are distributed under the Apache License 2.0. The full terms follow [LICENSE](LICENSE).\n"
     },
     {
       "id": "b000038",
